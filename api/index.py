@@ -6,7 +6,7 @@ from ai.captionConversion import generate_instagram_caption
 from ai.generateImageCaption import generateImageCaption
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 @app.route('/')
 def home():
     return 'Hello, World!'
