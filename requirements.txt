@@ -1,6 +1,8 @@
-Flask==3.0.3
+Flask~=3.1.0
 
-transformers~=4.50.3
+transformers~=4.51.0
 torch~=2.6.0
-pillow~=11.1.0
+pillow~=11.2.0
 ctransformers~=0.2.27
+requests~=2.32.3
+flask-cors~=5.0.1
