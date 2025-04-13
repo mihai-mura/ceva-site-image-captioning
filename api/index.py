@@ -7,9 +7,9 @@ from ai.generateImageCaption import generateImageCaption
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
-@app.route('/')
+@app.route('/test')
 def home():
-    return 'Hello, World!'
+    return 'Test endpoint is working!'
 
 @app.route('/generate-caption', methods=['POST'])
 def upload_file():
